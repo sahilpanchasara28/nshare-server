@@ -12,7 +12,7 @@ const fileSchema = new Schema(
     expireAt: {
       type: Date,
       default: Date.now,
-      index: { expires: "24h" },
+      expires: 86400,
     },
   },
   { timestamps: true }
